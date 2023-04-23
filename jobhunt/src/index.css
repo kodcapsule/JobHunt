@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Poppins", sans-serif;
+
+  --primary-color: #2a68ff;
+}
+
+body {
+  background: white;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  transition: all ease-in-out 300ms;
+}
+
+li:hover::before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  background: var(--primary-color);
+  right: 0;
+  bottom: 0;
+  color: var(--primary-color);
+}
+
+.icon {
+  @apply text-2xl cursor-pointer text-gray-400 hover:text-textColor transition-all delay-100;
+}
+
+/* Navbar  */
+.nav__links {
+  @apply hidden flex-col bg-yellow-200 rounded-md p-3 gap-5  md:flex md:flex-row md:bg-transparent;
+}
+
+.nav__link {
+  @apply p-1 hover:text-blueColor  transition-all delay-100 uppercase;
+}
+
+/* SEARCH BOX  */
+
+.btn {
+  @apply text-textColor py-3 px-4 rounded-md border-slate-500 font-semibold border-2   hover:bg-blue-400 hover:text-white transition-all delay-200;
+}
+
+.btn__primary {
+  @apply bg-blueColor text-white border-none;
+}
