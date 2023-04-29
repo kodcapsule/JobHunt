@@ -48,9 +48,18 @@ li:hover::before {
 /* SEARCH BOX  */
 
 .btn {
-  @apply text-textColor py-3 px-4 rounded-md border-slate-500 font-semibold border-2   hover:bg-blue-400 hover:text-white transition-all delay-200;
+  @apply text-textColor py-3 px-4 rounded-md border-slate-500 font-semibold border-2 text-center  hover:bg-blue-400 hover:text-white transition-all delay-200;
 }
 
+.btn__get__started {
+  @apply text-blueColor py-5 px-6 rounded-md border-slate-500 font-semibold border-2 text-center  hover:bg-blue-400 hover:text-white transition-all delay-200;
+}
 .btn__primary {
   @apply bg-blueColor text-white border-none;
+}
+
+/* GET STARTED */
+.get__started {
+  background-image: url("./assets/bg-img.jpg");
+  background-size: cover;
 }

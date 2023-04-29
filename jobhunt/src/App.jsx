@@ -3,6 +3,7 @@ import Search from "./components/SearchArea/SearchArea";
 import Jobs from "./components/JobsSec/Jobs";
 import Value from "./components/Value/Value";
 import Footer from "./components/Footer/Footer";
+import Getstarted from "./components/GetStarted/Getstarted";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Search />
       <Jobs />
       <Value />
+      <Getstarted />
       <Footer />
     </main>
   );
